@@ -147,7 +147,7 @@ form *{
     transition: transform 0.3s;
 }
 .feature:hover {
-    transform: translateY(-5px);
+    transform: translateY(-20px) scale(1.05);
 }
 .feature i {
     font-size: 50px;
