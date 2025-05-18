@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/logo.png.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <section class="hero">
@@ -55,7 +56,8 @@
     </div> -->
       
 
-    <h2 id="servicios" style="text-align: center; margin-bottom: 30px;"> SERVICIOS  </h2>
+    <h2 id="servicios" style="text-align: center; margin-bottom: auto;"> SERVICIOS  </h2>
+    <div class="separador"></div>
     <div class="services-section">
         <div class="carousel-container">
             <div class="carousel">
@@ -76,7 +78,8 @@
         </div>
     </div>
 
-    <h2 id="como-funciona" style="text-align: center; margin-bottom: 30px;"> CÓMO FUNCIONA  </h2>
+    <h2 id="como-funciona" style="text-align: center; margin-bottom: auto;"> CÓMO FUNCIONA  </h2>
+    <div class="separador"></div>
     <div class="how-it-works">
         <div class="how-section">
             <h3 class="feature-h3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum aliquam vel laboriosam </h3>
@@ -124,16 +127,15 @@
         </div>
     </div>
 
-    <h2 id="contacto" style="margin-top: 60px; text-align: center;">CONTACTO</h2>
+    <h2 id="contacto" style="margin-top: 60px; text-align: center; margin-bottom: auto;">CONTACTO</h2>
+    <div class="separador"></div>
     <form action="mailto:maurolatorre0@gmail.com" method="post" enctype="text/plain">
-        <label>Nombre</label>
-        <input type="text" name="nombre" required>
+        <h2>DEJANOS TU MENSAJE</h2>
+        <input type="text" placeholder="Nombre:" name="nombre" required>
 
-        <label>Email</label>
-        <input type="email" name="email" required>
+        <input type="email" placeholder="Correo:" name="email" required>
 
-        <label>Mensaje</label>
-        <textarea name="mensaje" rows="5" required></textarea>
+        <textarea name="mensaje" placeholder="Mensaje:" rows="5" required></textarea>
 
         <button type="submit">Enviar</button>
     </form>
@@ -146,22 +148,27 @@
 
 <footer>
     <div class="pre-footer">
+      <div class="pre-footer-content">
         <div class="redes">
             <img class="logo-footer" src="images/logo.png" alt="">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis repellat quia iure earum tempore minima non</p>
             <div class="redes-logo">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
+                <a href="" target="_blank" class="fa-brands fa-linkedin"></a>
+                <a href="" target="_blank" class="fa-brands fa-instagram"></a>
+                <a href="" target="_blank" class="fa-brands fa-facebook"></a>
             </div>
         </div>
-        <div class="ubicacion">
-            <p>Dirección: Saraza 1641, Parque Chacabuco</p>
-            <p>Buenos Aires, Argentina</p>
-            <p>Lunes a Viernes 9 a 18hs </p>
+        <div class="ubicacion"> 
+            <h3>DATOS DE CONTACTO</h3>
+            <p class="ubicacion-texto">Dirección: Saraza 1641, Parque Chacabuco <br>
+              Buenos Aires, Argentina
+            </p>
+            <!-- <p>Buenos Aires, Argentina</p> -->
+            <p>Lunes a Viernes 9:00 a 18:00 hs</p>
             <p>+54 911 4157-3361</p>
             <p>maurolatorre0@gmail.com</p>
         </div>
+      </div>
     </div>
     <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5840929338037!2d-58.44393372514452!3d-34.63994915941095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbc9f3be6e71%3A0xd5f10c00d7e53c12!2sSaraza%201641%2C%20C1406%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1747099856707!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <div class="footer-final">
