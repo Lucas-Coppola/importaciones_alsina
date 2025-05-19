@@ -1,3 +1,4 @@
+// Scroll: cambia estilo del navbar
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navContainer");
   if (window.scrollY > 50) {
@@ -7,6 +8,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Acordeón
 const items = document.querySelectorAll('.acordeon-item');
 items.forEach(item => {
   const btn = item.querySelector('.acordeon-titulo');
@@ -14,3 +16,12 @@ items.forEach(item => {
     item.classList.toggle('active');
   });
 });
+
+// Seleccionamos el botón del menú y el nav
+// const menuBtn = document.getElementById('menu-btn');
+// const navBar = document.getElementById('navBar');
+
+// // Alternamos la clase 'active' al hacer clic
+// menuBtn.addEventListener('click', () => {
+//   navBar.classList.toggle('active');
+// });
