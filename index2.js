@@ -34,5 +34,10 @@ menuBtn.addEventListener('click', () => {
 btnNav.forEach(btn => {
   btn.addEventListener('click', () => {
     navBar.classList.remove('active');
+    document.body.classList.toggle('no-scroll')
   });
+});
+
+hamburger.addEventListener('click', () => {
+  document.body.classList.toggle('no-scroll');
 });

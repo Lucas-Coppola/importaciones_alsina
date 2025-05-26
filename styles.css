@@ -899,6 +899,11 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+    }
+
     .navContainer {
         margin-top: 0;
     }
@@ -912,7 +917,6 @@ form button:hover {
     .navContainer.scrolled {
         background: none;
         backdrop-filter: blur(0px) !important;
-
     }
 
     .hamburger {
@@ -1016,6 +1020,14 @@ form button:hover {
 }
 
 @media (max-width: 480px) {
+    .navBar.active {
+        font-size: .8em;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+    }
 
     .hero h1,
     .hero h2 {
@@ -1037,14 +1049,40 @@ form button:hover {
     .whatsapp {
         width: 50px;
         height: 50px;
-        font-size: 24px;
+        font-size: 30px;
+    }
+
+    .carousel-container {
+        /* max-width: 100%; */
+        height: 17em !important;
+    }
+
+    .pre-footer p {
+        font-size: .8em;
     }
 
     .logo-footer {
-        width: 150px;
+        width: 180px;
+    }
+
+    .ubicacion h3 {
+        font-size: 1.1em;
     }
 
     .redes-logo a {
         font-size: 28px;
+    }
+
+    form input {
+        max-width: 90% !important;
+    }
+
+    form textarea {
+        max-width: 90%;
+    }
+
+    .footer-final {
+        font-size: .8em !important;
+        height: auto;
     }
 }
