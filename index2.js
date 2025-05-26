@@ -18,10 +18,21 @@ items.forEach(item => {
 });
 
 // Seleccionamos el botón del menú y el nav
-// const menuBtn = document.getElementById('menu-btn');
-// const navBar = document.getElementById('navBar');
+const menuBtn = document.getElementById('hamburger');
+const navBar = document.querySelector('.navBar');
+const btnNav = document.querySelectorAll('.btnNav')
 
-// // Alternamos la clase 'active' al hacer clic
-// menuBtn.addEventListener('click', () => {
-//   navBar.classList.toggle('active');
-// });
+// Alternamos la clase 'active' al hacer clic
+menuBtn.addEventListener('click', () => {
+  navBar.classList.toggle('active');
+});
+
+menuBtn.addEventListener('click', () => {
+  navBar.classList.add('scrolled');
+})
+
+btnNav.forEach(btn => {
+  btn.addEventListener('click', () => {
+    navBar.classList.remove('active');
+  });
+});

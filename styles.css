@@ -9,6 +9,7 @@ body {
     padding: 0;
     color: #333;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 form * {
@@ -97,7 +98,6 @@ form * {
     margin-top: 0px;
     /* height: 2em; */
     background: rgba(0, 47, 108, 0.50);
-    /* NO ESTA ANDANDO, SOLUCIONAR*/
 }
 
 .navBar a {
@@ -195,8 +195,9 @@ form * {
 .features {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .feature {
@@ -349,7 +350,7 @@ form button:hover {
     transform: scale(1.03);
 }
 
-.whatsapp {
+/* .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -365,6 +366,25 @@ form button:hover {
     text-decoration: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 999;
+} */
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 1000;
+
+    /* Tamaño adaptable */
+    width: clamp(45px, 6vw, 60px);
+    height: clamp(45px, 5vw, 60px);
+    font-size: clamp(20px, 5vw, 32px);
 }
 
 .carousel-container {
@@ -594,7 +614,202 @@ form button:hover {
 
 /* Media queries - Adaptacion responsive a todas las resoluciones */
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1700px) {
+
+    .hero {
+        height: 92vh;
+    }
+
+    .separador {
+        width: 200px;
+        height: 7px;
+    }
+
+    .whatsapp {
+        width: 150px;
+        height: 150px;
+    }
+
+    .whatsapp i {
+        font-size: 2.5em;
+    }
+
+    .navContainer {
+        height: 5em;
+    }
+
+    .navBar a {
+        font-size: 2.3em;
+    }
+
+    header img {
+        width: 350px !important;
+    }
+
+    h1 {
+        font-size: 6em !important;
+    }
+
+    header p {
+        font-size: 2.5em !important;
+    }
+
+    header h2 {
+        font-size: 5.5em !important;
+    }
+
+    .container {
+        max-width: 120%;
+    }
+
+    .container h2 {
+        font-size: 4em;
+    }
+
+    .features {
+        gap: 60px;
+        padding: 60px 80px;
+        justify-content: center;
+    }
+
+    .features .feature {
+        flex: 1;
+        padding: 40px;
+        max-width: 700px;
+        min-width: 300px;
+    }
+
+    .features .feature h3 {
+        font-size: 3rem !important;
+    }
+
+    .features .feature p {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 5rem !important;
+    }
+
+    .feature i {
+        font-size: 7em;
+    }
+
+    .feature h3 {
+        font-size: 2.1em !important;
+    }
+
+    .feature p {
+        font-size: 2em !important;
+    }
+
+    .service-info h3,
+    .how-section h3 {
+        font-size: 4em;
+    }
+
+    .service-info p,
+    .how-section p {
+        font-size: 2em;
+    }
+
+    .carousel-container {
+        width: 1500px;
+        height: 850px;
+    }
+
+    .carousel {
+        display: flex;
+        width: 850px;
+        /* 100% por imagen */
+        animation: slide 15s infinite;
+    }
+
+    .carousel-item {
+        height: 850px;
+        width: 850px;
+        object-fit: cover;
+    }
+
+    .acordeon-container {
+        max-width: 100% !important;
+        max-height: 100em !important;
+    }
+
+    .acordeon-titulo {
+        font-size: 2em;
+    }
+
+    form {
+        max-width: 60% !important;
+    }
+
+    form input {
+        height: 100px;
+        font-size: 3em;
+    }
+
+    form textarea {
+        font-size: 3em;
+    }
+
+    form button {
+        font-size: 3em;
+        border-radius: 207;
+    }
+
+    .pre-footer {
+        height: 50vh;
+    }
+
+    .logo-footer {
+        width: 370px !important;
+    }
+
+    .redes p {
+        font-size: 2em;
+    }
+
+    .redes a {
+        font-size: 3em !important;
+    }
+
+    .ubicacion h3 {
+        font-size: 3.2em;
+    }
+
+    .ubicacion p {
+        font-size: 2.3em;
+    }
+
+    .maps {
+        height: 70vh;
+    }
+
+    .footer-final {
+        font-size: 2.5em;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1171px) {
+
+    .whatsapp {
+        width: 50px;
+    }
+
+    .whatsapp i {
+        font-size: .8em;
+    }
+
+    .feature {
+        max-width: 50% !important;
+        /* margin-bottom: 10px; */
+    }
+
+    .feature h3 {
+        font-size: 1.5em;
+    }
 
     .hero h1,
     .hero h2 {
@@ -624,19 +839,34 @@ form button:hover {
 
     .carousel-container {
         width: 100%;
-        height: auto;
+        height: 40em;
     }
 
     .carousel,
     .carousel-item {
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+
+    .pre-footer-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pre-footer {
+        height: 50vh;
     }
 }
 
 @media (max-width: 992px) {
+
+    .whatsapp {
+        width: 50px;
+        height: 50px;
+    }
+
     .hero {
-        height: 50vh;
+        height: 90vh;
     }
 
     .hero h1,
@@ -650,11 +880,11 @@ form button:hover {
 
     .carousel-container {
         width: 95%;
-        margin-right: 0;
+        margin-right: 10px;
     }
 
     .pre-footer-content {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin-left: 0;
         gap: 2em;
@@ -669,38 +899,119 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
+    .navContainer {
+        margin-top: 0;
     }
 
     .navBar {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: 70%;
-        background-color: rgba(0, 47, 108, 0.9);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        transition: right 0.3s ease-in-out;
-        z-index: 999;
+        /* opacity: 0;
+        pointer-events: none; */
+        display: none;
+    }
+
+    .navContainer.scrolled {
+        background: none;
+        backdrop-filter: blur(0px) !important;
+
+    }
+
+    .hamburger {
+        position: fixed !important;
+        display: flex;
+        top: 2;
+        right: 2;
+    }
+
+    .whatsapp {
+        z-index: 999 !important;
+        bottom: 2;
+        right: 2;
     }
 
     .navBar.active {
+        display: flex;
+        position: fixed !important;
+        top: 0%;
+        right: 0%;
+        height: 100vh;
+        width: 30%;
+        background-color: rgba(0, 47, 108, 0.9);
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        /* gap: 40px; */
+        transition: right 0.3s ease-in-out;
+        z-index: 2000;
+        opacity: 100 !important;
+        pointer-events: auto;
+    }
+
+
+    /* .navBar.active {
         right: 0 !important;
         display: flex !important;
-    }
+    } */
 
     .navBar a {
         color: white;
         font-size: 1.2em;
     }
 
-    .navContainer {
+    /* .navContainer {
         justify-content: flex-end;
         padding: 15px 20px;
+    } */
+
+    .services-section,
+    .how-it-works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-info {
+        max-width: 100%;
+    }
+
+    .carousel-container {
+        margin: 10px 0 10px 0;
+        /* max-width: 100%; */
+        height: 20em;
+    }
+
+    .carousel,
+    .carousel-item {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .services-section h3 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .services-section p {
+        width: 90%;
+    }
+
+    .how-section {
+        margin-right: 0;
+    }
+
+    .acordeon-container {
+        max-width: 100%;
+    }
+
+    .maps {
+        max-width: 100%;
+    }
+
+    .ubicacion,
+    .ubicacion h3 {
+        align-items: start;
+        text-align: start;
     }
 }
 
